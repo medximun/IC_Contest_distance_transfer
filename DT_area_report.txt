@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : area
+Design : DT
+Version: Q-2019.12
+Date   : Thu Nov  3 15:30:19 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	U672/A U672/Y C1116/A C1116/Y U675/A0 U675/Y U658/B U658/Y U651/D U651/Y 
+Information: Timing loop detected. (OPT-150)
+	U487/B U487/Y U659/B0 U659/Y U660/C U660/Y U655/A U655/Y C1115/A C1115/Y C1116/B C1116/Y 
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'C1116'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A' and 'Y' on cell 'C1115'
+         to break a timing loop. (OPT-314)
+Library(s) Used:
+
+    sc9_cln40g_base_hvt_tt_typical_max_0p90v_25c (File: /usr/cad/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_hvt/sc9_cln40g_base_hvt_tt_typical_max_0p90v_25c.db)
+    sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c (File: /usr/cad/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db)
+
+Number of ports:                          188
+Number of nets:                           736
+Number of cells:                          550
+Number of combinational cells:            492
+Number of sequential cells:                52
+Number of macros/black boxes:               0
+Number of buf/inv:                         60
+Number of references:                      68
+
+Combinational area:                576.071984
+Buf/Inv area:                       28.576799
+Noncombinational area:             229.748391
+Macro/Black Box area:                0.000000
+Net Interconnect area:               0.000000
+
+Total cell area:                   805.820376
+Total area:                        805.820376
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -------------
+DT                                 805.8204    100.0  452.2392   229.7484  0.0000  DT
+add_119                             20.1852      2.5   20.1852     0.0000  0.0000  DT_DW01_inc_2
+add_190                             15.6492      1.9   15.6492     0.0000  0.0000  DT_DW01_inc_1
+add_214                             15.6492      1.9   15.6492     0.0000  0.0000  DT_DW01_inc_0
+r429                                29.2572      3.6   29.2572     0.0000  0.0000  DT_DW01_inc_5
+r430                                26.7624      3.3   26.7624     0.0000  0.0000  DT_DW01_dec_0
+r439                                16.3296      2.0   16.3296     0.0000  0.0000  DT_DW01_inc_4
+--------------------------------  ---------  -------  --------  ---------  ------  -------------
+Total                                                 576.0720   229.7484  0.0000
+
+1

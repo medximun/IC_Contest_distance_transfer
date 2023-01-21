@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : DT
+Version: Q-2019.12
+Date   : Thu Nov  3 15:30:19 2022
+****************************************
+
+Operating Conditions: ff_typical_min_0p99v_m40c   Library: sc9_cln40g_base_rvt_ff_typical_min_0p99v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: res_di[0] (input port clocked by clk)
+  Endpoint: min_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  input external delay                   0.0000     0.5000 r
+  res_di[0] (in)                         0.0000     0.5000 r
+  add_214/A[0] (DT_DW01_inc_0)           0.0000     0.5000 r
+  add_214/U2/Y (INV_X0P5B_A9TH)          0.0196     0.5196 f
+  add_214/SUM[0] (DT_DW01_inc_0)         0.0000     0.5196 f
+  U576/Y (AOI22_X0P5M_A9TH)              0.0527     0.5724 r
+  U575/Y (OAI221_X0P5M_A9TH)             0.0484     0.6208 f
+  min_reg[0]/D (DFFQ_X0P5M_A9TH)         0.0001     0.6209 f
+  data arrival time                                 0.6209
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  clock uncertainty                      0.1000     0.6000
+  min_reg[0]/CK (DFFQ_X0P5M_A9TH)        0.0000     0.6000 r
+  library hold time                      0.0200     0.6200
+  data required time                                0.6200
+  -----------------------------------------------------------
+  data required time                                0.6200
+  data arrival time                                -0.6209
+  -----------------------------------------------------------
+  slack (MET)                                       0.0009
+
+
+1

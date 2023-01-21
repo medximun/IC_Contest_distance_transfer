@@ -1,0 +1,272 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : DT
+Version: Q-2019.12
+Date   : Thu Nov  3 15:30:19 2022
+****************************************
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+  Startpoint: cs_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  cs_reg[1]/CK (DFFRPQ_X0P5M_A9TH)       0.0000     0.5000 r
+  cs_reg[1]/Q (DFFRPQ_X0P5M_A9TH)        0.1595     0.6595 r
+  U703/Y (INV_X0P5B_A9TH)                0.0664     0.7258 f
+  U365/Y (NOR2_X0P5M_A9TH)               0.1547     0.8805 r
+  U331/Y (NAND3_X0P5M_A9TH)              0.1500     1.0305 f
+  U691/Y (INV_X0P5B_A9TH)                0.1447     1.1752 r
+  U690/Y (OAI31_X0P5M_A9TH)              0.0882     1.2634 f
+  U459/Y (NAND2_X0P5M_A9TH)              0.0802     1.3436 r
+  U667/Y (AOI21_X0P5M_A9TH)              0.0649     1.4085 f
+  U647/Y (NAND4_X0P5M_A9TH)              0.1357     1.5443 r
+  U663/Y (INV_X0P5B_A9TH)                0.1358     1.6801 f
+  C1115/Y (OR2_X4B_A9TR)                 0.0466     1.7267 f
+  C1116/Y (OR2_X4B_A9TR)                 0.0263     1.7529 f
+  U675/Y (AO21A1AI2_X0P5M_A9TH)          0.0562     1.8092 r
+  U658/Y (NOR2_X0P5M_A9TH)               0.0580     1.8672 f
+  U651/Y (NAND4_X0P5M_A9TH)              0.1636     2.0308 r
+  U672/Y (INV_X0P5B_A9TH)                0.1512     2.1820 f
+  U390/Y (NOR2_X0P5M_A9TH)               0.1525     2.3344 r
+  U357/Y (NAND2_X0P5M_A9TH)              0.1135     2.4480 f
+  U523/Y (NOR2B_X0P7M_A9TH)              0.2116     2.6596 r
+  U572/Y (AOI22_X0P5M_A9TH)              0.1036     2.7632 f
+  U571/Y (OAI221_X0P5M_A9TH)             0.0870     2.8502 r
+  U279/Y (BUFH_X1M_A9TR)                 0.0409     2.8911 r
+  min_reg[2]/D (DFFQ_X0P5M_A9TH)         0.0001     2.8912 r
+  data arrival time                                 2.8912
+
+  clock clk (rise edge)                  3.0000     3.0000
+  clock network delay (ideal)            0.5000     3.5000
+  clock uncertainty                     -0.1000     3.4000
+  min_reg[2]/CK (DFFQ_X0P5M_A9TH)        0.0000     3.4000 r
+  library setup time                    -0.0099     3.3901
+  data required time                                3.3901
+  -----------------------------------------------------------
+  data required time                                3.3901
+  data arrival time                                -2.8912
+  -----------------------------------------------------------
+  slack (MET)                                       0.4988
+
+
+  Startpoint: cs_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  cs_reg[1]/CK (DFFRPQ_X0P5M_A9TH)       0.0000     0.5000 r
+  cs_reg[1]/Q (DFFRPQ_X0P5M_A9TH)        0.1595     0.6595 r
+  U703/Y (INV_X0P5B_A9TH)                0.0664     0.7258 f
+  U365/Y (NOR2_X0P5M_A9TH)               0.1547     0.8805 r
+  U331/Y (NAND3_X0P5M_A9TH)              0.1500     1.0305 f
+  U691/Y (INV_X0P5B_A9TH)                0.1447     1.1752 r
+  U690/Y (OAI31_X0P5M_A9TH)              0.0882     1.2634 f
+  U459/Y (NAND2_X0P5M_A9TH)              0.0802     1.3436 r
+  U667/Y (AOI21_X0P5M_A9TH)              0.0649     1.4085 f
+  U647/Y (NAND4_X0P5M_A9TH)              0.1357     1.5443 r
+  U663/Y (INV_X0P5B_A9TH)                0.1358     1.6801 f
+  C1115/Y (OR2_X4B_A9TR)                 0.0466     1.7267 f
+  C1116/Y (OR2_X4B_A9TR)                 0.0263     1.7529 f
+  U675/Y (AO21A1AI2_X0P5M_A9TH)          0.0562     1.8092 r
+  U658/Y (NOR2_X0P5M_A9TH)               0.0580     1.8672 f
+  U651/Y (NAND4_X0P5M_A9TH)              0.1636     2.0308 r
+  U672/Y (INV_X0P5B_A9TH)                0.1512     2.1820 f
+  U390/Y (NOR2_X0P5M_A9TH)               0.1525     2.3344 r
+  U357/Y (NAND2_X0P5M_A9TH)              0.1135     2.4480 f
+  U523/Y (NOR2B_X0P7M_A9TH)              0.2116     2.6596 r
+  U567/Y (AOI22_X0P5M_A9TH)              0.1036     2.7632 f
+  U566/Y (OAI221_X0P5M_A9TH)             0.0870     2.8502 r
+  U277/Y (BUFH_X1M_A9TR)                 0.0409     2.8911 r
+  min_reg[4]/D (DFFQ_X0P5M_A9TH)         0.0001     2.8912 r
+  data arrival time                                 2.8912
+
+  clock clk (rise edge)                  3.0000     3.0000
+  clock network delay (ideal)            0.5000     3.5000
+  clock uncertainty                     -0.1000     3.4000
+  min_reg[4]/CK (DFFQ_X0P5M_A9TH)        0.0000     3.4000 r
+  library setup time                    -0.0099     3.3901
+  data required time                                3.3901
+  -----------------------------------------------------------
+  data required time                                3.3901
+  data arrival time                                -2.8912
+  -----------------------------------------------------------
+  slack (MET)                                       0.4988
+
+
+  Startpoint: cs_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  cs_reg[1]/CK (DFFRPQ_X0P5M_A9TH)       0.0000     0.5000 r
+  cs_reg[1]/Q (DFFRPQ_X0P5M_A9TH)        0.1595     0.6595 r
+  U703/Y (INV_X0P5B_A9TH)                0.0664     0.7258 f
+  U365/Y (NOR2_X0P5M_A9TH)               0.1547     0.8805 r
+  U331/Y (NAND3_X0P5M_A9TH)              0.1500     1.0305 f
+  U691/Y (INV_X0P5B_A9TH)                0.1447     1.1752 r
+  U690/Y (OAI31_X0P5M_A9TH)              0.0882     1.2634 f
+  U459/Y (NAND2_X0P5M_A9TH)              0.0802     1.3436 r
+  U667/Y (AOI21_X0P5M_A9TH)              0.0649     1.4085 f
+  U647/Y (NAND4_X0P5M_A9TH)              0.1357     1.5443 r
+  U663/Y (INV_X0P5B_A9TH)                0.1358     1.6801 f
+  C1115/Y (OR2_X4B_A9TR)                 0.0466     1.7267 f
+  C1116/Y (OR2_X4B_A9TR)                 0.0263     1.7529 f
+  U675/Y (AO21A1AI2_X0P5M_A9TH)          0.0562     1.8092 r
+  U658/Y (NOR2_X0P5M_A9TH)               0.0580     1.8672 f
+  U651/Y (NAND4_X0P5M_A9TH)              0.1636     2.0308 r
+  U672/Y (INV_X0P5B_A9TH)                0.1512     2.1820 f
+  U390/Y (NOR2_X0P5M_A9TH)               0.1525     2.3344 r
+  U357/Y (NAND2_X0P5M_A9TH)              0.1135     2.4480 f
+  U523/Y (NOR2B_X0P7M_A9TH)              0.2116     2.6596 r
+  U576/Y (AOI22_X0P5M_A9TH)              0.1036     2.7632 f
+  U575/Y (OAI221_X0P5M_A9TH)             0.0847     2.8479 r
+  min_reg[0]/D (DFFQ_X0P5M_A9TH)         0.0001     2.8480 r
+  data arrival time                                 2.8480
+
+  clock clk (rise edge)                  3.0000     3.0000
+  clock network delay (ideal)            0.5000     3.5000
+  clock uncertainty                     -0.1000     3.4000
+  min_reg[0]/CK (DFFQ_X0P5M_A9TH)        0.0000     3.4000 r
+  library setup time                    -0.0302     3.3698
+  data required time                                3.3698
+  -----------------------------------------------------------
+  data required time                                3.3698
+  data arrival time                                -2.8480
+  -----------------------------------------------------------
+  slack (MET)                                       0.5218
+
+
+  Startpoint: cs_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  cs_reg[1]/CK (DFFRPQ_X0P5M_A9TH)       0.0000     0.5000 r
+  cs_reg[1]/Q (DFFRPQ_X0P5M_A9TH)        0.1595     0.6595 r
+  U703/Y (INV_X0P5B_A9TH)                0.0664     0.7258 f
+  U365/Y (NOR2_X0P5M_A9TH)               0.1547     0.8805 r
+  U331/Y (NAND3_X0P5M_A9TH)              0.1500     1.0305 f
+  U691/Y (INV_X0P5B_A9TH)                0.1447     1.1752 r
+  U690/Y (OAI31_X0P5M_A9TH)              0.0882     1.2634 f
+  U459/Y (NAND2_X0P5M_A9TH)              0.0802     1.3436 r
+  U667/Y (AOI21_X0P5M_A9TH)              0.0649     1.4085 f
+  U647/Y (NAND4_X0P5M_A9TH)              0.1357     1.5443 r
+  U663/Y (INV_X0P5B_A9TH)                0.1358     1.6801 f
+  C1115/Y (OR2_X4B_A9TR)                 0.0466     1.7267 f
+  C1116/Y (OR2_X4B_A9TR)                 0.0263     1.7529 f
+  U675/Y (AO21A1AI2_X0P5M_A9TH)          0.0562     1.8092 r
+  U658/Y (NOR2_X0P5M_A9TH)               0.0580     1.8672 f
+  U651/Y (NAND4_X0P5M_A9TH)              0.1636     2.0308 r
+  U672/Y (INV_X0P5B_A9TH)                0.1512     2.1820 f
+  U390/Y (NOR2_X0P5M_A9TH)               0.1525     2.3344 r
+  U357/Y (NAND2_X0P5M_A9TH)              0.1135     2.4480 f
+  U523/Y (NOR2B_X0P7M_A9TH)              0.2116     2.6596 r
+  U574/Y (AOI22_X0P5M_A9TH)              0.1036     2.7632 f
+  U573/Y (OAI221_X0P5M_A9TH)             0.0847     2.8479 r
+  min_reg[1]/D (DFFQ_X0P5M_A9TH)         0.0001     2.8480 r
+  data arrival time                                 2.8480
+
+  clock clk (rise edge)                  3.0000     3.0000
+  clock network delay (ideal)            0.5000     3.5000
+  clock uncertainty                     -0.1000     3.4000
+  min_reg[1]/CK (DFFQ_X0P5M_A9TH)        0.0000     3.4000 r
+  library setup time                    -0.0302     3.3698
+  data required time                                3.3698
+  -----------------------------------------------------------
+  data required time                                3.3698
+  data arrival time                                -2.8480
+  -----------------------------------------------------------
+  slack (MET)                                       0.5218
+
+
+  Startpoint: cs_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: min_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 Small                 sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.5000     0.5000
+  cs_reg[1]/CK (DFFRPQ_X0P5M_A9TH)       0.0000     0.5000 r
+  cs_reg[1]/Q (DFFRPQ_X0P5M_A9TH)        0.1595     0.6595 r
+  U703/Y (INV_X0P5B_A9TH)                0.0664     0.7258 f
+  U365/Y (NOR2_X0P5M_A9TH)               0.1547     0.8805 r
+  U331/Y (NAND3_X0P5M_A9TH)              0.1500     1.0305 f
+  U691/Y (INV_X0P5B_A9TH)                0.1447     1.1752 r
+  U690/Y (OAI31_X0P5M_A9TH)              0.0882     1.2634 f
+  U459/Y (NAND2_X0P5M_A9TH)              0.0802     1.3436 r
+  U667/Y (AOI21_X0P5M_A9TH)              0.0649     1.4085 f
+  U647/Y (NAND4_X0P5M_A9TH)              0.1357     1.5443 r
+  U663/Y (INV_X0P5B_A9TH)                0.1358     1.6801 f
+  C1115/Y (OR2_X4B_A9TR)                 0.0466     1.7267 f
+  C1116/Y (OR2_X4B_A9TR)                 0.0263     1.7529 f
+  U675/Y (AO21A1AI2_X0P5M_A9TH)          0.0562     1.8092 r
+  U658/Y (NOR2_X0P5M_A9TH)               0.0580     1.8672 f
+  U651/Y (NAND4_X0P5M_A9TH)              0.1636     2.0308 r
+  U672/Y (INV_X0P5B_A9TH)                0.1512     2.1820 f
+  U390/Y (NOR2_X0P5M_A9TH)               0.1525     2.3344 r
+  U357/Y (NAND2_X0P5M_A9TH)              0.1135     2.4480 f
+  U523/Y (NOR2B_X0P7M_A9TH)              0.2116     2.6596 r
+  U569/Y (AOI22_X0P5M_A9TH)              0.1036     2.7632 f
+  U568/Y (OAI221_X0P5M_A9TH)             0.0847     2.8479 r
+  min_reg[3]/D (DFFQ_X0P5M_A9TH)         0.0001     2.8480 r
+  data arrival time                                 2.8480
+
+  clock clk (rise edge)                  3.0000     3.0000
+  clock network delay (ideal)            0.5000     3.5000
+  clock uncertainty                     -0.1000     3.4000
+  min_reg[3]/CK (DFFQ_X0P5M_A9TH)        0.0000     3.4000 r
+  library setup time                    -0.0302     3.3698
+  data required time                                3.3698
+  -----------------------------------------------------------
+  data required time                                3.3698
+  data arrival time                                -2.8480
+  -----------------------------------------------------------
+  slack (MET)                                       0.5218
+
+
+1
